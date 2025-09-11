@@ -127,7 +127,7 @@ def threeIsFiveMinusTwo : Prop := 3 = 5 - 2   -- another proposition
 def proof3e5m2 : threeIsFiveMinusTwo := rfl            -- a proof of it
 
 def PimpQ : Prop := fiveIsTwoPlusThree → threeIsFiveMinusTwo  -- conjunction
-def pimpq : PimpQ := fun pfP => proof3e5m2
+def pimpq : PimpQ := fun pfp => proof3e5m2
 
 /- @@@
 ### Iff (↔)

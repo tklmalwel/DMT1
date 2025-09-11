@@ -63,21 +63,21 @@ exponentially growing propositions by the the repeated
 application of *And* starting with the ones we have.
 @@@ -/
 
-def PandQ : Prop := And P Q   -- abstract syntax
-def PandQ' : Prop := P ∧ Q    -- concrete notation
+def PanQ : Prop := And P Q   -- abstract syntax
+def PanQ' : Prop := P ∧ Q    -- concrete notation
 
-#check PandQ
-#check PandQ'
+#check PanQ
+#check PanQ'
 
-def PandQ2 : Prop :=  PandQ ∧ PandQ
-def PandQ3 : Prop := PandQ2 ∧ PandQ2
-def PandQ4 : Prop := PandQ3 ∧ PandQ3
-def PandQ5 : Prop := PandQ4 ∧ PandQ4
+def PanQ2 : Prop :=  PanQ ∧ PanQ
+def PanQ3 : Prop := PanQ2 ∧ PanQ2
+def PanQ4 : Prop := PanQ3 ∧ PanQ3
+def PanQ5 : Prop := PanQ4 ∧ PanQ4
 
 #eval 3 + 5
 #reduce 3 + 5
 
-#reduce (types := true) PandQ5
+#reduce (types := true) PanQ5
 
 
 /- @@@
